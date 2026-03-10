@@ -25,9 +25,9 @@ jobs:
 
             const count = prs.length;
 
-            // Format each PR on its own line with Slack mrkdwn link syntax
+            // Format each PR with plain text and bare URL (Slack auto-links URLs)
             const prList = prs.map(pr =>
-              `• <${pr.html_url}|#${pr.number} - ${pr.title}> (by ${pr.user.login})`
+              `• #${pr.number} - ${pr.title} (by ${pr.user.login})\n  ${pr.html_url}`
             ).join('\n');
 
             core.setOutput('count', count);
