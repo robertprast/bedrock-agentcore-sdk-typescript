@@ -5,6 +5,42 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+
+## [0.2.2] - 2026-03-12
+
+### Added
+- feat: add Slack notification workflow for new issues (#56) (ca67c52)
+
+### Fixed
+- fix: escape special characters in Slack notification payload (#58) (abdbb84)
+
+### Other Changes
+- feat(browser): Add BrowserLiveView component for DCV live-view streaming (#92) (5e89b17)
+- Clarify framework compatibility in README (#91) (c5b3843)
+- ci(deps): bump actions/github-script from 7 to 8 (#28) (2f80f49)
+- chore(deps-dev): bump @modelcontextprotocol/sdk from 1.25.3 to 1.26.0 (#65) (8be8c30)
+- chore(deps-dev): bump minimatch from 3.1.2 to 3.1.5 (#76) (98ed027)
+- chore(deps-dev): bump @hono/node-server from 1.19.9 to 1.19.10 (#80) (c680614)
+- chore(deps-dev): bump @types/express from 4.17.25 to 5.0.6 (#53) (d106e82)
+- chore(deps): bump qs from 6.14.1 to 6.14.2 (#69) (d81342e)
+- chore(deps): bump rollup from 4.53.3 to 4.59.0 (#74) (a77ea1f)
+- chore(deps-dev): bump ajv from 6.12.6 to 6.14.0 (#89) (0c2a42d)
+- chore(deps): bump fast-xml-parser and @aws-sdk/client-bedrock-runtime (#90) (d469924)
+- ci(deps): bump aws-actions/configure-aws-credentials from 4 to 5 (#26) (dc98844)
+- chore(deps-dev): bump the development-dependencies group across 1 directory with 13 updates (#88) (10db53c)
+- ci(deps): bump actions/setup-node from 4 to 6 (#29) (2bfc14f)
+- ci(deps): bump actions/upload-artifact from 4 to 5 (#27) (0b0a175)
+- ci(deps): bump actions/download-artifact from 4 to 6 (#25) (da80efc)
+- chore(deps): bump fastify from 5.7.4 to 5.8.1 (#83) (42bbe18)
+- chore(deps-dev): bump hono from 4.11.5 to 4.12.7 (#85) (026909b)
+- chore(deps): bump the production-dependencies group across 1 directory with 10 updates (#78) (b948dcc)
+- chore(deps-dev): bump @types/node from 24.10.9 to 25.0.10 (#54) (e2d0926)
+- Fix PR list formatting in Slack notification (#86) (b178b9a)
+- Add daily Slack notification for open PRs (#84) (caaef3a)
+- Add proxy, extensions, and profile configuration support to TypeScript SDK (#72) (1453a15)
+- chore: bump version to 0.2.1 (#63) (e87908c)
+- docs(readme): fix incorrect code examples    (#50) (5e3cf94)
+
 ## [Unreleased]
 
 ### Added
